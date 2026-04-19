@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
 .bg {
     background-image: url(media/banner-bg.jpg );
     background-position: center bottom;
@@ -546,4 +550,221 @@ input:focus {
     color: white;
     font-family: "poppins", sans-serif;
     margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Hero Background */
+    .bg {
+        height: auto;
+        border-radius: 0 0 60px 60px;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    /* Header */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .header img {
+        margin: 20px 0 0 0;
+    }
+    .header ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10px;
+        gap: 5px;
+    }
+    .header ul li {
+        margin-top: 10px;
+        margin-right: 0;
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+    .header ul li button {
+        margin-right: 0;
+    }
+
+    /* Main Hero */
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .main .txt-div {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .main .txt-div p {
+        margin-left: 0;
+    }
+    .main .txt-div h1 {
+        margin-left: 0;
+        font-size: 32px;
+    }
+    .main .txt-div .longtxt br {
+        display: none;
+    }
+    .searchcontainer {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .searchcontainer input {
+        width: 280px;
+        margin-left: 0;
+    }
+    .searchcontainer button {
+        margin-left: 0;
+        width: 280px;
+    }
+    .main .imgdiv {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .main .imgdiv img {
+        width: 90%;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Feature Boxes */
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .boxes .box {
+        width: 85%;
+    }
+
+    /* Trending */
+    .trend {
+        height: auto;
+    }
+    .trend .trendtxt {
+        width: 90%;
+        margin-top: 60px;
+    }
+    .trend .row {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    .trend .row .pro {
+        width: 100%;
+    }
+    .row .pro img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Top Games */
+    .top {
+        height: auto;
+        border-radius: 60px;
+        margin-top: 60px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    .top .trendtxt {
+        width: 90%;
+        margin-top: 40px;
+    }
+    .topbox {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 90%;
+        margin-top: 40px;
+    }
+    .topbox .tbox {
+        width: 45%;
+        height: auto;
+    }
+    .topbox .tbox img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Categories */
+    .categorey {
+        height: auto;
+        margin-top: 60px;
+        padding: 0 10px 40px;
+    }
+    .categorey .catboxes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .catboxes .cbox {
+        width: 45%;
+    }
+    .catboxes .cbox img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Last Section */
+    .lastbg {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+    .lastleft, .lastright {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding-bottom: 30px;
+        border-radius: 25px;
+    }
+    .lastleft p, .lastleft h2,
+    .lastleft h6, .lastleft button,
+    .lastright p, .lastright h2 {
+        margin-left: 20px;
+    }
+    .lastleft button {
+        margin-top: 30px;
+    }
+    .lastsearch {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .lastsearch input {
+        margin-left: 20px;
+        width: 80%;
+    }
+    .lastsearch button {
+        margin-left: 20px;
+        width: 80%;
+    }
+
+    /* Footer */
+    .footer {
+        border-top-right-radius: 60px;
+        border-top-left-radius: 60px;
+        width: 100%;
+        text-align: center;
+    }
 }
